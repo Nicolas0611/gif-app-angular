@@ -7,5 +7,5 @@ import { environment } from '@environments/environment';
   templateUrl: './side-menu-header.html',
 })
 export class SideMenuHeader {
-  protected readonly envs = environment;
+  envs = environment;
 }
