@@ -1,2 +1,24 @@
-<p>search-page works!</p>
-,
+<h2 class="text-2xl font-bold">Buscar Gifs</h2>
+<h3 class="text-sm text-gray-500">Busca los Gifs que quieras</h3>
+
+<section class="flex flex-col gap-4 pt-5">
+  <div class="flex gap-2">
+    <input
+      type="text"
+      class="w-full p-2 rounded-md border border-gray-300"
+      placeholder="Buscar Gifs"
+      #searchInput
+    />
+    <button
+      class="bg-blue-500 text-white p-2 rounded-md"
+      (click)="onSearchGifs(searchInput.value)"
+      type="button"
+    >
+      Buscar
+    </button>
+  </div>
+</section>
+
+<section class="">
+  <gifs-list [gifs]="gifs()" />
+</section>
