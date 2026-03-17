@@ -37,10 +37,6 @@ export class GifsService {
     localStorage.setItem('history', JSON.stringify(this.searchHistory()));
   });
 
-  test = effect(() => {
-    console.log({ grouped: this.trendingGifGrouped() });
-  });
-
   constructor() {
     this.loadTrendingGifs();
   }
